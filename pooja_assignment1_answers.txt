@@ -1,0 +1,42 @@
+1(a)/rosout
+(b)The /rosout node is used to log messages from nodes and is used to display them in a single stream.
+(c)/rosout
+   /rosout_agg
+(d)/rosout [unknown type]
+(e)/rosout_agg[rosgraph_msgs/Log]
+(f)/rosout/set_logger_level
+   /rosout/get_loggers
+(g)killing /rosout
+   killed
+   /rosout
+   /rosout cannot be terminated unless we exit from roscore
+(h)rosnode info:print info about node
+   rosnode kill:kill a running node
+   rosnode list:list active nodes
+   rosnode machine:list nodes running on a particular machine or list machine
+   rosnode ping:test connectivity to node
+   rosnode cleanup:purge registration information of unreachable nodes
+2(b) Only one node is running that is the publisher node and it is directly communicating with /rosout because the subscriber node is yet to be run
+2(c)/pooja_pubnode
+    /rosout
+2(d)To run three simutaneous codes Anonymous=True is set in the rospy.init node of publisher.There for we have three continuous nodes running and communicating with /rosout
+3(b)The publishernode pooja_node1 has a message greetings which is subscribed by the subscriber node RAA24_subnode and it communicates with the /rosout.
+
+4(a)/CET_8397_1729828429256
+/M1RAA_24_26_8284_1729828383191
+/pooja_8094_1729828303667
+/rosout
+
+4(b)/hello_class
+/hello_college
+/rosout
+/rosout_agg
+/welcome
+
+4(c)The /rosout node is used to log messages from nodes and is used to display them in a single stream.
+
+4(d)[FATAL] [1729828749.864460]: unable to register service [/M1RAA 2024_8662_1729828749744/get_loggers] with master: ERROR: parameter [service] contains illegal chars
+[FATAL] [1729828749.867376]: unable to register service [/M1RAA 2024_8662_1729828749744/set_logger_level] with master: ERROR: parameter [service] contains illegal chars
+[INFO] [1729828749.873720]: Hello pooja welcome
+
+
